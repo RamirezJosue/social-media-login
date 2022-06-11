@@ -20,7 +20,7 @@ export class AppController {
   async facebookLoginRedirect(@Req() req: Request): Promise<any> {
     const { user } = <any>req;
     console.log('gaaaaaaaaaaaaaaaaaaaa',user);
-    return { url: 'https://localhost:4200/profile/?id=josue' };
+    return { url: 'https://localhost:4200/authorize/%3Fresponse_type%3Dtoken%26client_id%3D5Tv4JZDW7aMGtw8drZ68ivOD5fgb3n81UhK3p4eX%26scope%3Dread%26state%3D123%26redirect_uri%3Dhttps%253A%252F%252Fwww.upeu.dev%252Flamb-financial%252Ffronts%252Fpurchases%252Foauth%252Fredirect' };
     // console.log('gooooooooooooo',user);
     // return {
     //   statusCode: HttpStatus.OK,
@@ -40,7 +40,7 @@ export class AppController {
   async googleAuthRedirect(@Req() req: Request): Promise<any> {
     const { user } = <any>req;
     console.log('hola mundoooooo',user);
-    return { url: 'https://localhost:4200/profile/?id=josue' };
+    return { url: 'https://localhost:4200/authorize/%3Fresponse_type%3Dtoken%26client_id%3D5Tv4JZDW7aMGtw8drZ68ivOD5fgb3n81UhK3p4eX%26scope%3Dread%26state%3D123%26redirect_uri%3Dhttps%253A%252F%252Fwww.upeu.dev%252Flamb-financial%252Ffronts%252Fpurchases%252Foauth%252Fredirect' };
   }
 
   @Get("/twitter")
@@ -55,7 +55,7 @@ export class AppController {
   async twitterCallback(@Req() req: Request): Promise<any> {
     const { user } = <any>req;
     console.log('hola mundoooooo',user);
-    return { url: 'https://localhost:4200/profile/?id=josue' };
+    return { url: 'https://localhost:4200/authorize/%3Fresponse_type%3Dtoken%26client_id%3D5Tv4JZDW7aMGtw8drZ68ivOD5fgb3n81UhK3p4eX%26scope%3Dread%26state%3D123%26redirect_uri%3Dhttps%253A%252F%252Fwww.upeu.dev%252Flamb-financial%252Ffronts%252Fpurchases%252Foauth%252Fredirect' };
   }
 
   @Get("/microsoft")
@@ -70,7 +70,7 @@ export class AppController {
   async microsoftCallback(@Req() req: Request): Promise<any> {
     const { user } = <any>req;
     console.log('hola mundoooooo',user);
-    return { url: 'https://localhost:4200/profile/?id=josue' };
+    return { url: 'https://localhost:4200/authorize/%3Fresponse_type%3Dtoken%26client_id%3D5Tv4JZDW7aMGtw8drZ68ivOD5fgb3n81UhK3p4eX%26scope%3Dread%26state%3D123%26redirect_uri%3Dhttps%253A%252F%252Fwww.upeu.dev%252Flamb-financial%252Ffronts%252Fpurchases%252Foauth%252Fredirect' };
   }
 
 }
